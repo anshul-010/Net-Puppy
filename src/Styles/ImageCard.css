@@ -1,0 +1,42 @@
+.img-card {
+    position: relative;
+    width: 463px;
+    height: 252px;
+    border-radius: 15px;
+    /* display: flex; */
+  }
+  
+  .img-card::before {
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    /* background-image: url('https://s3-alpha-sig.figma.com/img/4e0a/c460/2c0383f400220dcb63e7c93c7e04b629?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h5TrP94pPaUA8~e0LDL5Td3ECiGjji-Y1e5ReSqyKlyzRhp27py4SRXrcTyierP~Du-XLAL1eblvjpwFP5bLIp7m-ApH01641XGNHUSoXXS~U12ubvyurWYYsNnV1J-q9lUxDJWIZ06uy3j58Ak4k-c-ch5COOtcDmniHlbLgiT~TpfTHysYp7I67SwDj0trndKtq7CH69pTA-Pkgxs3OXyG6IizFfFhbX4tpuPyXyc8LEf-gQgVYAvf2KTUC8TXrPsqXHVhhZn-T6fi-VrMXZnzTw0qxMGoVLUgQs6fXM8C2G4cB6bfjujDCfSqDci9s7pB8mTt~8C5iWFxsWNzww__'); Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    filter: brightness(50%);
+  }
+  
+  .bottom-text {
+    position: absolute;
+    top:130px;
+    left: 35px;
+    width: 200px;
+    z-index: 10;
+    /* padding: 20px; */
+    color: white;
+    /* border: 1px solid red; */
+  }
+  
+  .bottom-text>h2{
+    font-size: 30px;
+    
+  }
+
+  .bottom-text>p{
+    font-size: 13px;
+    
+  }

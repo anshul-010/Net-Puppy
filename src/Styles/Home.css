@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.itelic-text{
+    color: #000;
+    font-family: Mirador;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.bottom-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.img-card-yt{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tula{
+    color: #B90124;
+    font-family: Mirador;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    
+}
+
+.latest-text{
+    color: #2e2e2e;
+    font-family: "TT Chocolates Trl";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 0.75px;
+}
+
+.Why-TIS>p{
+    font-family: Mirador;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: normal;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.Why-TIS span{
+    color: #B90124;
+
+}
+
+.focus{
+    color: #202833;
+    font-family: "Goudy Old Style";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.management{
+    color: #B90124;
+    text-align: center;
+    font-family: "Goudy Old Style";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.friendly-para{
+    color: #202833;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.img-castle{
+    mix-blend-mode: multiply;
+    /* color: #B90124; */
+   
+}
+
+.fifth-text{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fifth-text :nth-child(1){
+    color: #FFF;
+    text-align: center;
+    font-family: "Goudy Old Style";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.fifth-text :nth-child(2){
+    color: #FFF;
+    text-align: end;
+    font-family: "Goudy Old Style";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.number{
+    position: absolute;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    background-color: #B90124;
+    top:80vh;
+    left: 10vw;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+.number>div{
+    width: 300px;
+    border-right: 1px solid white;
+}
+
+.number>div :nth-child(1){
+    color: #FFF;
+    text-align: center;
+    font-family: "TT Chocolates";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.number>div :nth-child(2){
+    color: #FFF;
+    text-align: center;
+    font-family: "Goudy Old Style";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.last-div{
+    border-right: none !important;
+
+}
+
+.six-img-card{
+    color: #B90124;
+}
