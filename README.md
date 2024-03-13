@@ -7,7 +7,7 @@ This repository contains the code for a front-end assignment aimed at creating a
 
 
 
-#Live link(https://65f1bbe3e4584e307bd7e1a2--genuine-twilight-a59eb1.netlify.app/)
+#Live [link](https://65f1d11e68d5a73e5bf79c58--genuine-twilight-a59eb1.netlify.app/)
 
 ## Tech Stack
 
@@ -61,9 +61,12 @@ Open your browser and visit http://127.0.0.1:5173/ to view the application.
 ![Worldref](https://github.com/anshul-010/Net-Puppy/assets/93611786/b8df789b-0fbe-44a9-8100-7c1eaec2ab9a)
 
 
-![Worldref](https://github.com/anshul-010/Net-Puppy/assets/93611786/87d4edda-5408-4aff-b0ba-a0a7c4d3784b)
+![Worldref](https://github.com/anshul-010/IdeaClan/assets/93611786/59b89a75-c783-4b54-8f60-53c058a01e06)
+
+
+![Worldref](https://github.com/anshul-010/IdeaClan/assets/93611786/4d5dcdd2-2c93-4647-85e1-58d2f7062169)
 
 
 ## Demo
 
-Check out the live demo on [Netlify](https://65f1bbe3e4584e307bd7e1a2--genuine-twilight-a59eb1.netlify.app/).
+Check out the live demo on [Netlify](https://65f1d11e68d5a73e5bf79c58--genuine-twilight-a59eb1.netlify.app/).
