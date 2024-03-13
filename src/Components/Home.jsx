@@ -4,7 +4,8 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import { ImageCard } from "./ImageCard";
 import whitetbadge from "../Images/whitetbadge.svg";
 import schoolImg from "../Images/blog.png";
-import image from "../Images/image.jpg";
+// import CountUp from 'react-countup';
+import mobile from "../Images/mockup.png";
 let horseImage =
   "https://s3-alpha-sig.figma.com/img/4e0a/c460/2c0383f400220dcb63e7c93c7e04b629?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h5TrP94pPaUA8~e0LDL5Td3ECiGjji-Y1e5ReSqyKlyzRhp27py4SRXrcTyierP~Du-XLAL1eblvjpwFP5bLIp7m-ApH01641XGNHUSoXXS~U12ubvyurWYYsNnV1J-q9lUxDJWIZ06uy3j58Ak4k-c-ch5COOtcDmniHlbLgiT~TpfTHysYp7I67SwDj0trndKtq7CH69pTA-Pkgxs3OXyG6IizFfFhbX4tpuPyXyc8LEf-gQgVYAvf2KTUC8TXrPsqXHVhhZn-T6fi-VrMXZnzTw0qxMGoVLUgQs6fXM8C2G4cB6bfjujDCfSqDci9s7pB8mTt~8C5iWFxsWNzww__";
 let horseTitle = "Horse Riding";
@@ -25,7 +26,7 @@ export const Home = () => {
   return (
     <>
       <div>
-        <Box w="90vw" h="95vh" m="auto" display="flex" p="10px">
+        <Box w="90vw" h="95vh" m="auto" display="flex" p="10px"  >
           <Box display="flex" flexDirection="column" gap="70px">
             <Box>
               <Text className="itelic-text" w="456px">
@@ -50,6 +51,7 @@ export const Home = () => {
               justifyContent="space-around"
               w="250px"
               borderRadius="34.5px"
+              className="see-all"
             >
               <Text
                 fontSize="sm"
@@ -57,7 +59,7 @@ export const Home = () => {
                 color="#644810"
                 alignSelf="center"
               >
-                SEE ALL ACTIVITIES{" "}
+                SEE ALL ACTIVITIES
               </Text>
               <Image
                 w="38px"
@@ -126,7 +128,7 @@ export const Home = () => {
           <Box
             className="school-better"
             w="90vw"
-            m="20px auto"
+            m="20px auto 0px"
             display="flex"
             justifyContent="space-between"
           >
@@ -166,6 +168,7 @@ export const Home = () => {
                   w="250px"
                   borderRadius="34.5px"
                   alignSelf="end"
+                  
                 >
                   <Text
                     fontSize="sm"
@@ -362,6 +365,7 @@ export const Home = () => {
               justifyContent="space-around"
               w="250px"
               borderRadius="34.5px"
+              className="see-all"
             >
               <Text
                 fontSize="sm"
@@ -369,7 +373,7 @@ export const Home = () => {
                 color="#644810"
                 alignSelf="center"
               >
-                SEE ALL ACTIVITIES{" "}
+                SEE ALL ACTIVITIES
               </Text>
               <Image
               
@@ -401,6 +405,99 @@ export const Home = () => {
             </Box>
           </Box>
         </Box>
+        <Box className="eight-seccsion" display='flex' justifyContent='space-between'>
+            <Box  w='700px' >
+              <Box className="from-text" w='350px'm='40px auto 10px'>
+                <p>From The</p>
+                <p>Parents</p>
+              </Box>
+              <Box  w='550px' ml='30px' display='flex'>
+                <Box w="60px" h='60px'>
+                  <Image w='100%' h='100%' src='https://s3-alpha-sig.figma.com/img/161a/0b8e/45d8653303538ec3ac3354826b2e6782?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dEt5vXfuC~v1YXB8Qfm8Njw0iCFN6txt~YECSVwsNmNn8YvZhZlER04M~cTMKYfEb1FBfmTJbq7jVOnMwWH0TB3oegEGy5Fh2zmdTuafOmK2qMLpZUkB~kFRkTqexH-tkRYS9spLHcDFQ~BbyjjfAgtMiyhKJL4BcE3IXo0w4CvG-0uSUE0q77yTPgeBcu45Xt0pZkQibZXsV0NKBbY2sWafRfQPImBysOfWybIPd757ZYs99ib-zPUGspcf0FaRiKiEY2FAo7Qkau12lgj4rkidQcHSyRI5jxNlJA4IKD3Xz68kG0KXsCTY7pgtFWcCDsiu5IUsJOHeOLru6x66LA__'/>
+                </Box>
+                <Box h='0px ' alignSelf="center" mt='25px' w='500px' border='1px solid #B90124' >
+                </Box>
+              </Box>
+              <Box   w='500px' m='20px 40px'>
+                <p>
+                What stands out to us is the school's emphasis on inBoxidualized attention. Our child's teachers have been attentive to their unique needs, providing the support and encouragement necessary for their academic success.
+
+                </p>
+              </Box>
+            </Box>
+            <Box  className="mobile-out"  w='340px' h='520px'>
+              <Box  className="mobile-inner"  w='250px' h='500px'>
+
+                <Image w='100%' h='100%' src={mobile} alt="" />
+              </Box>
+              <Box className="right-side-box">
+
+              </Box>
+            </Box>
+        </Box>
+          <Box className="sec-last" display='flex'  mt='30px' mb='80px'>
+            <Box w='400px' h="350px" border='1px solid #A60028' borderRadius="0 50% 50% 0"  backgroundColor='#A60028'>
+              <Text position='absolute' className="coll">COLLABORATIONS</Text>
+                <Text  color='white' className="what-text" w='300px' mt='180px' ml='90px'>
+                    What stands out to us is the school's emphasis on individualized attention. Our child's teachers have been attentive
+                </Text>
+            </Box>
+            <Box  w='940px'>
+              <Box  display='flex'ml='250px' mt='10px' w='690px' justifyContent='space-between'>
+                <Image w='130px' h='130px' src='https://s3-alpha-sig.figma.com/img/5391/a3d8/69fec28ead8cd1088b81e0934d3d93ff?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b4460dAESXfmr0eSwg0nfeAh22ogksmCR2omNAyYWQ7jmh4NIi~Mlp74HbyGSmSejU4ErE24v6P3C7t6fvHPxZKR96OQbxFwFmbn19PEkMNAlHkEu1Elpp5JD2BeMNbFG~iEzCE52VhF84aABV10PFZ1v-WRn4v1Ss-bG2Kb6bJ7ndmM3vbmnTrCzrzi-hIeN4oJqzhKzVp4LqF3tO8mGeFYGop9~~xN7SUCJI7o-37tb2QGaH0r3WYMVTvBEeJdgwvV9uZjYOJ-h~BhAzmxvmc4sUNLagxQwy2LToAQp6P3Q0bKFHj9YyM6SSWoQKMVZZCRoqWsuPKB6PrMZ6nBSg__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/0635/95b9/4aeb15dacb687cce2ad18e2167ebf4cd?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WEU6whfYRO~by9lwFp74wxBDM20~9usXQgAfORjGP3M10oMrXOffljU4OBgdMwvSXWA355tXdoOqrdRh5hzYwJt~E75F1ooWpmDZtyIqdMpE47ZJAsU~FopyuSttThLFif-uANHcWH7Wp1OxZJxNqvqbvj-2MKTgO0pXD979gN~rTi-EjVGPOOWqjDmfW-uCzkm43jfP~ts6DfP~5UcMl3NrqIYzTYrzW-RGsJv56SvVBDHegsej8waq6XS25uVhfFq-kXKL2KzC78gXHjvdYxOx0uN~4BRV0T4JH9hueDVvmOgABNHDGN1JM38ylSMPDsI4qmFJs0iW6ZPqdnWKZA__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/30dd/66a2/838ca5978afcbca0ce2cd0c477e9ac34?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j3IPwWjbbqdm5qTe70Bbib7Xa3EVNepFfnug3hfWSCjREoiMKKl5YoVZFzTn~hTjwQtZGK714b6BAo-bK1mwNlQE0PbbG4uwAls3BOc~T77oW6iUxF97ijpSqrW8zJpjHfgf-KRSR8KqULS2ZN0ZGQyQ8YEcgTmJsWMq0fq-4Olm3Rk6oX0ToBEez-ETdGit5l2iKZ4jbDPBzTvH4285t1SpUN2uzOUeGO0DjUujsmZRH8itIb2PULqdqsZFUXEMSXBieeTi25ZXuJljC9oAWldQqWFkUPx~~y3zGc8MlvZfRV-hmSqtb~hZ29CCIzotqTeSZATlFdAvWcx-mAfR-Q__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/748d/3f89/5fef592a700914deb14100387f9eef07?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ISRm03heTuAdqyY5RTQAarFE0Tz9lE-YQLzTC269d6RtEAqYLRVgFK6hln5kgDLB-3LaGNsxL35muxnuQhv7US1J2chuwjteh9uJkY1gox9frZHiPa2T2LF3H7Y4lmyNgGwa-xKGBffoJeBok~Php1pdKCmeZJuVa2tlcfLsJ9CXl1gIKeEnmbx2GhLJF4GJI5-VV~8WCG3RN~A9qu0S49N56zCClPcYXlHHlJkYnwpP7mBY1bDLLIsMwVz0gRXZuB7RVPq1832WNrhaN5OOLwQo4JYMj5gb15lUH5AShr2oCT-S6rPoHW75~3G6kGuCWctSxSABP5eWQAl5dCKsVQ__'/>
+              </Box>
+              <Box  w='910px' display='flex' ml='30px' mt='80px' justifyContent='space-between'>
+                <Image src='https://s3-alpha-sig.figma.com/img/8dcb/5586/b2c39851b38e1d7da88a906ac86ff27c?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g114n7Ac2YJFwzcoH5oizgEF-AuzjNixC1SCSSRq7NDkXSMUxScx4O1pRyUQyyc42yn7psmF7aR-8MAHBdkh1y4pXhrpF2wN-hjRTVKUn0YpIU2pennCU~zoH19BLaJq4Vx71PxJRMg7aboe7pquy62IBGg7KcftNclfXjEpDgXixv7J1QwzJxTqaSSvjBc-k~xnuRT~X2uA2kyEWjAcisLEQZZQe4Etd49C07rkJcpk6WmUUlFIx52DlfYh6J7dhmXOmZt6k6wXmTuqJ8rE7x75TVkPd6edgK9JRCekoLaSjh-Q7U34QixwIriGuocSYhhHd7lzQIkRAHJfB~jK5A__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/93cb/2c64/317f74c3527e4bcbb355bcc2ea8e03cf?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KNoYb81XoGQryurgsWEWyGPO0dNx6CxTTLvgbqGVUcFZ2Xg0JrhPUULGxTZM4qVHzeNrxn5lyohJ3E3723nWkay70es-cZ4wm5bYZpFJEZAK906qiwOkjwSIraEDqCSv5WjwbFdAcfqJDDIA~FBcG6aNY2DC15bFo4m7lplCw1H~yvC-Ylj9uVD3wPBjey-vO~V7DDao6keNNvy20~qTCvFJLBp4bStnWVnJtPtNtFJuGztIiFIlEXS5Dbx80CT~Zr~OAMo0o957hqDur3tFtMnH1rz9OrcoZo-A9VqU13luX~hLc4H9foJlyEFJu~8Dq~h-BOb3HW-9oBB7b3VYtg__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/62de/41bb/39e38afa75609fd16e8e66c89dd48a2a?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RfuyyMtX9EyBEj2QR05rTjNKmwWCFNdg8454tktFOugg1o-BDePsl6H68RBV64vDabdv438-AM9xFWyCJiTm9oWeXaUcsOiAZoEawQ2pEiyp6QriYEwsjmU5wrPSBsqyy4UZMnOBzhTLVp6AMnru7JuiCx9tLvTPJ4k430MHAzA4F-Fiq9LhIBBLlUgMcuu54WtqjOv96ssRjUxPkJi0FL1f5600nwovtrHP~WjOHiDCML5~NnH8x0r4x-1uMZ-~7-brHw3XqT87oySOzJEM5-HD-ry3qWJmOQflM7I27fmSgPm9U8WSO0GMqX6~IiWE4QcfaiqlxkJ0GfUtyj~IkA__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/5e3b/1a4f/dd821f174f00e2ee0b3b9bcacedea095?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hf3VH8sl3kCh7vJzyU0IZpLTa1qkPOVXST1PxjUVJRpAz8JV6W-Z3LSFsloHtAVsqk55C-KYEKK3KtT68GngKyd4QgV4WgZqzgih5nd6zwt~QNwGrtboh2D7t5~4gnjg3XDJ3n~41aVm7O5kRrZJoT6xSCCLXU0JmMEoyVpc3f7~o9eS4lF2fCCDtF982YEB~6fmGqyqKVdd6j2RtZESmOxeZSusYFPHFUCPozajtKj4oClX~D~ekhBFkNXFmN83HNMi9XqOS5gC2JbYyPWpk~ipPElHcSfISf5opMTz-GmoaCURiDa1LZFSev333xs5T0N4Tlzs7giRrH0ojVU6fg__'/>
+                <Image src='https://s3-alpha-sig.figma.com/img/55b9/e1a5/78ebf678324b0f5da7313e10d177786f?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mya9KedIxR3PFlz8cGxbfNx0BTV~ZDwxrCTFMwq7qZizxsrlddnzglkNTHjqveHIAJYbgb7P5tzGquKKlZjeN5mRwOJDxH8nO2Z2anSgIb84mtO8jqtTznZz0ejB16xdJwqOYewhlrq8~hSABT6jGIdfdR6vOPA0sVkwJlcT7Ay7Hg2PK~4FsoCw-jClTOQTSAxStbGOY-ZXGOlmJNSmlLUJpThH~TSZ~7Pg8f93~-fcsG5TrPpQ0Ps5KjQaYSFvVqNnbM7ReGGnf8lysxCnvrhhkBeWfBOqUtqv84ztC-xvdCFvYu-SIBeq-KGj~HuORozrj4bwKorJknaRrzrGJg__'/>
+              </Box>
+            </Box>
+          </Box>
+        <div
+       
+      className="img-card-map"
+      style={{
+        position: "relative",
+        width: "98.7vw",
+        height: "90vh",
+        borderRadius: "15px",
+        border:"1px solid"
+      }}
+    >
+      <div
+        className="img-card-map2"
+        style={{
+          position: "relative",
+          
+          width: "100%",
+          height: "100%",
+          backgroundImage:
+            `url(https://s3-alpha-sig.figma.com/img/f558/8cd0/91093103616e209a8817aa831fd61f6f?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qdX9fyPAj3L-ndVRXu~9cwvqgdHDRlddK3v0tMOBPU00Z2jlBk931lY8h7gR74lT5~~hgEV3inf-BwyMCNyCNHvzSY~idMIiaM5cmvp035~pPTRcN875KZaDARupPBO-6CcDiyJGCm2anMh6rXA5mXDC-dRI~wKGHr20sGkxcWdimD3S~BLpoeHZw~JgrUqpnSrzFn73XLO0vJmCGWlEp7g9J3GnACJ6zuDmONOM-m~m~DF81mkBXn52wty82R34wSFGXZbDxSB~7lPONyS7lOk0eo4VeVEdPPnAmMPTL0FcYxLfrR6WtGyNq5bjffGWuIq1e0Y99-Rm7nubaBytow__)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          borderRadius: "15px",
+          filter: "brightness(25%)",
+        }}
+      >
+
+      </div>
+        <div className="map-box">
+          <p>BECOME A PART OF THE...</p>
+          <p>TULA’S FAMILY</p>
+          <p>VILL.DHOOLKOT, NEAR TULAS INSTITUTE SELAQUI NEAR MANDIR  Dehradun, Uttarakhand, 248197</p>
+          
+        </div>
+        <div className="last-btns-div">
+            <div>VIRTUAL TOUR</div>
+            <div>APPLY NOW</div>
+            <div>fedena LOGIN</div>
+          </div>
+    </div>
       </div>
     </>
   );
