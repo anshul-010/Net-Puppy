@@ -7,7 +7,7 @@ This repository contains the code for a front-end assignment aimed at creating a
 
 
 
-#Live link(https://65eed393aaf1ae2c78f268f8--lucent-haupia-4aa6a6.netlify.app/)
+#Live link(https://65f198c95899aa122c2736e5--genuine-twilight-a59eb1.netlify.app/)
 
 ## Tech Stack
 
@@ -66,4 +66,4 @@ Open your browser and visit http://127.0.0.1:5173/ to view the application.
 
 ## Demo
 
-Check out the live demo on [Netlify](https://65eed393aaf1ae2c78f268f8--lucent-haupia-4aa6a6.netlify.app/).
+Check out the live demo on [Netlify](https://65f198c95899aa122c2736e5--genuine-twilight-a59eb1.netlify.app/).
