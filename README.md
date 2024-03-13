@@ -7,7 +7,7 @@ This repository contains the code for a front-end assignment aimed at creating a
 
 
 
-#Demo Live Link: [link](https://65f1d11e68d5a73e5bf79c58--genuine-twilight-a59eb1.netlify.app/)
+#Demo Live Link: [click here](https://65f1d11e68d5a73e5bf79c58--genuine-twilight-a59eb1.netlify.app/)
 
 ## Tech Stack
 
