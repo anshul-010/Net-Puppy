@@ -295,3 +295,14 @@
     margin-top: 50px;
     margin-left: 150px;
 }
+
+.imgs{
+    mix-blend-mode: multiply;
+}
+
+.p-animated{
+    display: flex;
+    
+    justify-content: center;
+
+}

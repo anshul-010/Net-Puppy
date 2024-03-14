@@ -4,7 +4,7 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import { ImageCard } from "./ImageCard";
 import whitetbadge from "../Images/whitetbadge.svg";
 import schoolImg from "../Images/blog.png";
-// import CountUp from 'react-countup';
+import AnimatedNumbers from "react-animated-numbers";
 import mobile from "../Images/mockup.png";
 let horseImage =
   "https://s3-alpha-sig.figma.com/img/4e0a/c460/2c0383f400220dcb63e7c93c7e04b629?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h5TrP94pPaUA8~e0LDL5Td3ECiGjji-Y1e5ReSqyKlyzRhp27py4SRXrcTyierP~Du-XLAL1eblvjpwFP5bLIp7m-ApH01641XGNHUSoXXS~U12ubvyurWYYsNnV1J-q9lUxDJWIZ06uy3j58Ak4k-c-ch5COOtcDmniHlbLgiT~TpfTHysYp7I67SwDj0trndKtq7CH69pTA-Pkgxs3OXyG6IizFfFhbX4tpuPyXyc8LEf-gQgVYAvf2KTUC8TXrPsqXHVhhZn-T6fi-VrMXZnzTw0qxMGoVLUgQs6fXM8C2G4cB6bfjujDCfSqDci9s7pB8mTt~8C5iWFxsWNzww__";
@@ -27,6 +27,7 @@ export const Home = () => {
     <>
       <div>
         <Box w="90vw" h="95vh" m="auto" display="flex" p="10px"  >
+        
           <Box display="flex" flexDirection="column" gap="70px">
             <Box>
               <Text className="itelic-text" w="456px">
@@ -62,6 +63,7 @@ export const Home = () => {
                 SEE ALL ACTIVITIES
               </Text>
               <Image
+              className="imgs"
                 w="38px"
                 h="25px"
                 src="https://s3-alpha-sig.figma.com/img/2b85/93a2/7d3a9eac7549e11d7cd1bd6f5cbb5a3b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fr1uQOSbnr9nT1klmA-XCoTmp-DYgomnt3FG2KFRttgdrAtDL06fPve1nyvIoTyw0PLRl~nbMjt1PCpDON5Vmwv8dtd64B3EiW9RyMINObEE5b7z81rtSHjRI~GJo5cVU95c6BgXG-~WihKR7d8qvHUytcz62gU7cJjedUYXTwh12BEX6MG5o2pyWWMQat41UxbTwR4zVscHESW1dZU63FB68QGprNzUJL8~G~dGJSSEl2yEXem99uImZsZ0csAnVE7hYGJki54xKzJYq~N6KMZAeGgJWgze~PVZBVdCyr3Xhx2Ah3N9~5QuILexWpqGtcYUCcPgVylBf6suFJie4g__"
@@ -179,6 +181,7 @@ export const Home = () => {
                     LEARN MORE
                   </Text>
                   <Image
+                  className="imgs"
                     w="38px"
                     h="25px"
                     src="https://s3-alpha-sig.figma.com/img/2b85/93a2/7d3a9eac7549e11d7cd1bd6f5cbb5a3b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fr1uQOSbnr9nT1klmA-XCoTmp-DYgomnt3FG2KFRttgdrAtDL06fPve1nyvIoTyw0PLRl~nbMjt1PCpDON5Vmwv8dtd64B3EiW9RyMINObEE5b7z81rtSHjRI~GJo5cVU95c6BgXG-~WihKR7d8qvHUytcz62gU7cJjedUYXTwh12BEX6MG5o2pyWWMQat41UxbTwR4zVscHESW1dZU63FB68QGprNzUJL8~G~dGJSSEl2yEXem99uImZsZ0csAnVE7hYGJki54xKzJYq~N6KMZAeGgJWgze~PVZBVdCyr3Xhx2Ah3N9~5QuILexWpqGtcYUCcPgVylBf6suFJie4g__"
@@ -324,19 +327,73 @@ export const Home = () => {
           </div>
           <div className="number">
             <div>
-              <p>100%</p>
+              <p className="p-animated"><AnimatedNumbers
+        includeComma
+        animateToNumber={`${100}`}
+        fontStyle={{ fontSize: 50, fontFamily: "Avenir" }}
+        locale="en-US"
+        configs={[
+          { mass: 1, tension: 220, friction: 100 },
+          { mass: 1, tension: 180, friction: 130 },
+          { mass: 1, tension: 280, friction: 90 },
+          { mass: 1, tension: 180, friction: 135 },
+          { mass: 1, tension: 260, friction: 100 },
+          { mass: 1, tension: 210, friction: 180 }
+        ]}
+      ></AnimatedNumbers>%</p>
               <p>College Acceptance</p>
             </div>
             <div>
-              <p>20</p>
+              <p className="p-animated"><AnimatedNumbers
+        includeComma
+        animateToNumber={`${20}`}
+        fontStyle={{ fontSize: 50, fontFamily: "Avenir" }}
+        locale="en-US"
+        configs={[
+          { mass: 1, tension: 220, friction: 100 },
+          { mass: 1, tension: 180, friction: 130 },
+          { mass: 1, tension: 280, friction: 90 },
+          { mass: 1, tension: 180, friction: 135 },
+          { mass: 1, tension: 260, friction: 100 },
+          { mass: 1, tension: 210, friction: 180 }
+        ]}
+      ></AnimatedNumbers></p>
               <p>Years of Educational Excellence</p>
             </div>
             <div>
-              <p>60%</p>
+              <p className="p-animated"><AnimatedNumbers
+              
+        includeComma
+        animateToNumber={`${60}`}
+        fontStyle={{ fontSize: 50, fontFamily: "Avenir" }}
+        locale="en-US"
+        configs={[
+          { mass: 1, tension: 220, friction: 100 },
+          { mass: 1, tension: 180, friction: 130 },
+          { mass: 1, tension: 280, friction: 90 },
+          { mass: 1, tension: 180, friction: 135 },
+          { mass: 1, tension: 260, friction: 100 },
+          { mass: 1, tension: 210, friction: 180 }
+        ]}
+      ></AnimatedNumbers>%</p>
               <p>STEM Program Participation</p>
             </div>
             <div className="last-div">
-              <p>15+</p>
+              <p className="p-animated"><AnimatedNumbers
+              
+              includeComma
+              animateToNumber={`${15}`}
+              fontStyle={{ fontSize: 50, fontFamily: "Avenir" }}
+              locale="en-US"
+              configs={[
+                { mass: 1, tension: 220, friction: 100 },
+                { mass: 1, tension: 180, friction: 130 },
+                { mass: 1, tension: 280, friction: 90 },
+                { mass: 1, tension: 180, friction: 135 },
+                { mass: 1, tension: 260, friction: 100 },
+                { mass: 1, tension: 210, friction: 180 }
+              ]}
+            ></AnimatedNumbers>+</p>
               <p>Extracurricular Activities</p>
             </div>
           </div>
@@ -377,7 +434,7 @@ export const Home = () => {
               </Text>
               <Image
               
-
+                className="imgs"
                 w="38px"
                 h="25px"
                 src="https://s3-alpha-sig.figma.com/img/2b85/93a2/7d3a9eac7549e11d7cd1bd6f5cbb5a3b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fr1uQOSbnr9nT1klmA-XCoTmp-DYgomnt3FG2KFRttgdrAtDL06fPve1nyvIoTyw0PLRl~nbMjt1PCpDON5Vmwv8dtd64B3EiW9RyMINObEE5b7z81rtSHjRI~GJo5cVU95c6BgXG-~WihKR7d8qvHUytcz62gU7cJjedUYXTwh12BEX6MG5o2pyWWMQat41UxbTwR4zVscHESW1dZU63FB68QGprNzUJL8~G~dGJSSEl2yEXem99uImZsZ0csAnVE7hYGJki54xKzJYq~N6KMZAeGgJWgze~PVZBVdCyr3Xhx2Ah3N9~5QuILexWpqGtcYUCcPgVylBf6suFJie4g__"
@@ -437,7 +494,7 @@ export const Home = () => {
         </Box>
           <Box className="sec-last" display='flex'  mt='30px' mb='80px'>
             <Box w='400px' h="350px" border='1px solid #A60028' borderRadius="0 50% 50% 0"  backgroundColor='#A60028'>
-              <Text position='absolute' className="coll">COLLABORATIONS</Text>
+              <Text position='absolute' className="coll" >COLLABORATIONS</Text>
                 <Text  color='white' className="what-text" w='300px' mt='180px' ml='90px'>
                     What stands out to us is the school's emphasis on individualized attention. Our child's teachers have been attentive
                 </Text>
@@ -489,7 +546,7 @@ export const Home = () => {
         <div className="map-box">
           <p>BECOME A PART OF THE...</p>
           <p>TULA’S FAMILY</p>
-          <p>VILL.DHOOLKOT, NEAR TULAS INSTITUTE SELAQUI NEAR MANDIR  Dehradun, Uttarakhand, 248197</p>
+          <p>VILL.DHOOLKOT, NEAR TULAS INSTITUTE SELAQUI NEAR MANDIR Dehradun, Uttarakhand, 248197</p>
           
         </div>
         <div className="last-btns-div">
